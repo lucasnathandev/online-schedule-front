@@ -1,0 +1,84 @@
+/* Layout */
+footer.grid-container {
+  grid-template-areas: "social" "credits";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr max-content;
+}
+
+.social-media {
+  grid-area: social;
+  display: grid;
+  width: 50%;
+  height: 50%;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.social-media i {
+  font-size: 2rem;
+}
+
+.credits span {
+  font-size: 1.5rem;
+}
+
+.credits {
+  grid-area: credits;
+  display: flex;
+  margin: 0.5rem 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Styles */
+
+.social-media a,
+.credits a {
+  text-decoration: none;
+}
+
+.fa-facebook {
+  color: #0051ff;
+  transition: 0.1s;
+}
+
+.fa-facebook:hover {
+  filter: drop-shadow(0px 0px 1rem #1b1bff);
+}
+
+.fa-instagram {
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.1s;
+}
+
+.fa-instagram:hover {
+  filter: drop-shadow(0px 0px 1rem rgb(180, 16, 71));
+}
+
+.credits-text * {
+  color: var(--special);
+}
+
+.credits-text a.link-color {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.admin a {
+  color: var(--secondary);
+}
+
+.admin a:hover {
+  filter: drop-shadow(0px 0px 1rem rgb(88, 45, 243));
+}

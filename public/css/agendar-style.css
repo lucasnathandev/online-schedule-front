@@ -1,0 +1,54 @@
+@import url("agendar-layout.css");
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url("../fonts/CaviarDreams.ttf");
+}
+
+html {
+  font-family: "Caviar Dreams";
+}
+
+html * {
+  text-decoration: none;
+}
+
+body > * {
+  animation: slide-r-fadein 0.5s ease-in-out;
+}
+
+header > nav {
+  background-color: var(--special);
+}
+
+nav a.back {
+  transition: all 0.5s;
+  color: var(--primary);
+  width: max-content;
+}
+
+nav a.back:hover {
+  animation: swing-l 1s ease-in-out infinite;
+}
+
+main.grid-container {
+  background-color: var(--primary);
+}
+
+main > form div input {
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+main > form div label * {
+  font-weight: 600;
+  color: var(--special);
+}
+
+main > form div.send input {
+  color: var(--primary);
+  background-color: var(--special);
+}
+
+main > form div.send input:hover {
+  background-color: var(--secondary);
+}

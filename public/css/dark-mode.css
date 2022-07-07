@@ -1,0 +1,4 @@
+.dark-mode:not(.no-dark) {
+    background-color: var(--dark);
+    color: var(--colordark);
+}

@@ -1,0 +1,83 @@
+body.grid-container {
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 10vh 1fr 25vh;
+  grid-template-columns: 1fr;
+  row-gap: 0.2rem;
+}
+
+header.grid-container {
+  grid-area: header;
+}
+
+main.grid-container {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-area: main;
+}
+
+main > form > .user {
+  grid-area: user;
+}
+
+main > form > .password {
+  grid-area: password;
+}
+
+main > form > .send {
+  grid-area: send;
+}
+
+/* Container layout */
+main > form.grid-container {
+  grid-template-areas: "user" "password" "send";
+  grid-template-rows: repeat(2, 1fr) 2fr;
+  row-gap: 1rem;
+}
+
+/* Items layout */
+
+main > form div:not(.send) {
+  row-gap: 1rem;
+  grid-template-columns: minmax(50vw, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+main > form div {
+  display: grid;
+  min-width: 50%;
+}
+
+main > form .send {
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+main > form div input {
+  margin: 0 0.5rem;
+  min-width: 50%;
+  height: 2rem;
+  align-self: center;
+}
+
+main > form div.send input {
+  transition: 0.5s;
+  min-width: 200px;
+}
+
+main > form .send input {
+  height: 3rem;
+  font-size: 1.5rem;
+}
+
+main > form div label {
+  font-size: 2rem;
+  align-self: center;
+  justify-self: center;
+}
+
+@media (min-width: 769px) {
+  main > form div {
+    max-width: 90%;
+  }
+}

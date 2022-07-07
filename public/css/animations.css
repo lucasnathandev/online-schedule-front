@@ -1,0 +1,27 @@
+.animation-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animation-up {
+  animation: up 0.8s ease forwards;
+}
+
+.animation-up-fadein {
+  animation: up-fadein 0.8s ease-in-out;
+}
+
+.animation-fadein {
+  animation: fadein 0.8s ease;
+}
+
+.animation-slide-right {
+  animation: slide-r 0.6s ease;
+}
+
+.animation-slide-right-fadein {
+  animation: slide-r-fadein 1s ease;
+}
+
+.animation-slide-up-fadein {
+  animation: slide-up-fadein 1s ease;
+}

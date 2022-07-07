@@ -1,0 +1,29 @@
+@import url("dark-mode.css");
+@import url("root-variables.css");
+@import url("font.css");
+@import url("footer.css");
+@import url("margin.css");
+@import url("width.css");
+@import url("height.css");
+@import url("keyframes.css");
+@import url("logo.css");
+@import url("grid-layout.css");
+@import url("animated-components.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100%;
+  background-color: var(--primary);
+  color: var(--secondary);
+}

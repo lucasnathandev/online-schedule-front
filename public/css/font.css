@@ -1,0 +1,23 @@
+.fs-2 {
+  font-size: 2rem;
+}
+
+.fs-3 {
+  font-size: 3rem;
+}
+
+.fs-4 {
+  font-size: 5rem;
+}
+
+.fs-5 {
+  font-size: 6rem;
+}
+
+.color-primary {
+  color: var(--primary);
+}
+
+a.link-color {
+  color: rgb(9, 73, 88);
+}

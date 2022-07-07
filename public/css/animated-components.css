@@ -1,0 +1,22 @@
+.loading {
+  place-self: center;
+  opacity: 1;
+  height: 3rem;
+  background-color: transparent;
+  width: 3rem;
+  border: solid 0.5rem var(--special);
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: rotate-infinite 0.7s infinite linear;
+}
+
+.loading.invisible {
+  opacity: 0;
+  animation: none;
+}
+
+@keyframes rotate-infinite {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,28 @@
+/* Mobile first */
+
+body.grid-container {
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 10vh 1fr 25vh;
+  row-gap: 0.2rem;
+}
+
+header.grid-container {
+  grid-area: header;
+  grid-template-columns: 1fr;
+}
+
+main.grid-container {
+  grid-area: main;
+  grid-template-rows: 10vh 1fr;
+}
+
+footer.grid-container {
+  grid-area: footer;
+}
+
+@media (min-width: 769px) {
+}
